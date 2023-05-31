@@ -6,6 +6,9 @@ M.custom = {
   i = {
     ["jk"] = { "<ESC>", "Escape insert mode"},
   },
+  n = {
+    ["QQ"] = { ":qa <CR>", "quit all if no unsaved changes"}
+  }
 }
 
 M.lazygit = {
