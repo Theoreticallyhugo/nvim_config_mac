@@ -29,7 +29,12 @@ local plugins = {
   {
     "nvim-treesitter/nvim-treesitter",
     opts = require 'custom.configs.treesitter'
-  }
+  },
+
+  {
+    "nvim-tree/nvim-tree.lua",
+    opts = require "custom.configs.nvimtree",
+  },
 }
 
 return plugins
