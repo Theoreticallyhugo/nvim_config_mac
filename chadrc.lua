@@ -6,8 +6,10 @@ M.plugins = 'custom.plugins'
 -- Path to overriding theme and highlights files
 local highlights = require "custom.highlights"
 
+-- require "configs.catppuccin"
+
 M.ui = {
-  theme = 'catppuccin',
+  theme = "catppuccin",
   hl_override = highlights.override,
   hl_add = highlights.add,
   nvdash = {

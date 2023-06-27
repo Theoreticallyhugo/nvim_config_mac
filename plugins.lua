@@ -35,6 +35,11 @@ local plugins = {
     "nvim-tree/nvim-tree.lua",
     opts = require "custom.configs.nvimtree",
   },
+
+  {
+    "wbthomason/packer.nvim",
+    opts = require "custom.configs.packer",
+  },
 }
 
 return plugins
