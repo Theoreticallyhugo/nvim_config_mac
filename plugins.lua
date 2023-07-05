@@ -36,10 +36,6 @@ local plugins = {
     opts = require "custom.configs.nvimtree",
   },
 
-  {
-    "wbthomason/packer.nvim",
-    opts = require "custom.configs.packer",
-  },
 }
 
 return plugins
