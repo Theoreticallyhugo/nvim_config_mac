@@ -7,7 +7,8 @@ M.custom = {
     ["jk"] = { "<ESC>", "Escape insert mode"},
   },
   n = {
-    ["QQ"] = { ":qa <CR>", "quit all if there are no unsaved changes"}
+    ["QQ"] = { ":qa <CR>", "quit all if there are no unsaved changes"},
+		["W!"] = { ":w !sudo tee % <CR>", "save file as sudo when write protected"},
   },
 }
 
