@@ -18,5 +18,25 @@ M.lazygit = {
   },
 }
 
+M.dap = {
+  plugin = true,
+  n = {
+    ["<leader>db"] = { "<cmd> DapToggleBreakpoint <CR>", "Breakpoint at current line" },
+    ["<leader>dr"] = { "<cmd> DapContinue <CR>", "Start / continue debugger" },
+  }
+}
+
+M.dap_python = {
+  plugin = true,
+  n = {
+    ["<leader>dpr"] = {
+      function ()
+        require("dap-python").set_method()
+      end,
+      "Run Python tests"
+    }
+  }
+}
+
 return M
 
