@@ -7,7 +7,6 @@ M.plugins = 'custom.plugins'
 local highlights = require "custom.highlights"
 
 -- require "configs.catppuccin"
-vim.cmd("set noexpandtab")
 
 M.ui = {
   theme = "catppuccin",
