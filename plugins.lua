@@ -13,10 +13,6 @@ local plugins = {
     end,
   },
   {
-    'simrat39/rust-tools.nvim',
-    opts = require "custom.configs.rust-tools",
-  },
-  {
     "williamboman/mason.nvim",
     opts = require "custom.configs.mason",
   },
