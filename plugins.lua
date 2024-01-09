@@ -12,7 +12,10 @@ local plugins = {
       require "custom.configs.lspconfig"
     end,
   },
-
+  {
+    'simrat39/rust-tools.nvim',
+    opts = require "custom.configs.rust-tools",
+  },
   {
     "williamboman/mason.nvim",
     opts = require "custom.configs.mason",
@@ -33,7 +36,7 @@ local plugins = {
     opts = require "custom.configs.nvimtree",
   },
 	{
-		url = "git@github.com:MaggieLostKeys/nvim-ccutil.git",
+		url = "https://github.com/MaggieLostKeys/nvim-ccutil.git",
 		event = "BufEnter",
 		opts = {
 			default_width = "100", -- default: 80

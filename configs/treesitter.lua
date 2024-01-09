@@ -3,6 +3,7 @@ local M = {
     "python",
     "lua",
     "cpp",
+    "rust",
   },
   indent = {
     enable = true,
