@@ -37,6 +37,10 @@ M.override = {
     italic = true,
     fg = "#747992",
   },
+  -- gitcommitComment = {
+  --   italic = true,
+  --   fg = "#747992",
+  -- },
   -- theoretically this is used for doc (""") in python, but it doesnt work?
   ["@text.literal"] = {
     fg = C.teal,

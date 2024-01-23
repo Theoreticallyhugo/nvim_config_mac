@@ -12,6 +12,41 @@ M.custom = {
   },
 }
 
+M.telescope = {
+  n = {
+    ["<leader>fs"] = {
+      function()
+        require("telescope.builtin").lsp_document_symbols()
+      end,
+      "Find document symbols"
+    },
+    ["<leader>fS"] = {
+      function()
+        require("telescope.builtin").lsp_workspace_symbols()
+      end,
+      "Find workspace symbols"
+    },
+    ["<leader>fi"] = {
+      function()
+        require("telescope.builtin").lsp_implementations()
+      end,
+      "List implementations"
+    },
+    ["<leader>fd"] = {
+      function()
+        require("telescope.builtin").lsp_definitions()
+      end,
+      "List definition"
+    },
+    ["<leader>fq"] = {
+      function()
+        require("telescope.builtin").quickfix()
+      end,
+      "List quickfixes"
+    }
+  }
+}
+
 M.lazygit = {
   n = {
     ["<leader>gg"] = { "<cmd> LazyGit <CR>", "Open LazyGit" },

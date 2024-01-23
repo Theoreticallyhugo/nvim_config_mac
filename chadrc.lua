@@ -11,6 +11,12 @@ vim.cmd("set foldmethod=indent")
 vim.cmd("set foldlevel=99")
 
 -- require "configs.catppuccin"
+--
+-- includes lower and upper bound
+--  includes lower and upper bound
+-- math.random(0,1)
+
+local startscreen = require("custom.startscreen")
 
 M.ui = {
   theme = "catppuccin",
@@ -18,14 +24,7 @@ M.ui = {
   hl_add = highlights.add,
   nvdash = {
     load_on_startup = true,
-    header = {
-    "┬ ┬┌─┐┬ ┬  ┌─┐┌─┐┌┐┌┌┬┐  ┌─┐┌─┐┌┬┐┌─┐┬ ┬  ┌─┐┌─┐┌─┐┌─┐┌─┐┌─┐  ",
-    "└┬┘│ ││ │  │  ├─┤│││ │   ├┤ ├┤  │ │  ├─┤  │  │ │├┤ ├┤ ├┤ ├┤   ",
-    " ┴ └─┘└─┘  └─┘┴ ┴┘└┘ ┴   └  └─┘ ┴ └─┘┴ ┴  └─┘└─┘└  └  └─┘└─┘  ",
-    "┬┌─┐  ┬ ┬┌─┐┬ ┬┬─┐┌─┐  ┌┬┐┌─┐┌─┐┌┬┐                           ",
-    "│├┤   └┬┘│ ││ │├┬┘├┤    ││├┤ ├─┤ ││                           ",
-    "┴└     ┴ └─┘└─┘┴└─└─┘  ─┴┘└─┘┴ ┴─┴┘o                          ",
-    }
+    header = startscreen,
   }
 }
 
