@@ -73,5 +73,22 @@ M.dap_python = {
   }
 }
 
+M.todo_comments = {
+  n = {
+    ["<leader>tn"] = {
+      function()
+        require("todo-comments").jump_next()
+      end,
+      "Next todo comment"
+    },
+    ["<leader>tp"] = {
+      function()
+        require("todo-comments").jump_prev()
+      end,
+      "Previous todo comment"
+    }
+  }
+}
+
 return M
 

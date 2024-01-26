@@ -4,6 +4,7 @@ local M = {
     "lua",
     "cpp",
     "rust",
+    "comment",
   },
   indent = {
     enable = true,

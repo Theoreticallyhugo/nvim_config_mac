@@ -32,6 +32,15 @@ local C = {
 -- reference catppuccin/lua/catppuccin/groups/integrations/treesitter.lua
 -- reference https://github.com/nvim-treesitter/nvim-treesitter/blob/master/CONTRIBUTING.md
 M.override = {
+  Search = {
+    bg = C.red,
+  },
+  IncSearch = {
+    bg = C.maroon,
+  },
+  Substitute = {
+    bg = C.red,
+  },
   -- general comment
   Comment = {
     italic = true,
@@ -45,12 +54,12 @@ M.override = {
   ["@text.literal"] = {
     fg = C.teal,
   },
-  -- TODO keyword in comments
+  -- TODO: keyword in comments
   Todo = {
   fg = C.yellow,
   bg = C.base,
   },
-  -- FIXME, NOTE, and XXX
+  -- default group for FIXME, NOTE, and XXX
   ["@text"] = {
   fg = C.red,
   bg = C.base,
@@ -136,6 +145,12 @@ M.override = {
 
 }
 
-M.add = {}
+M.add = {
+  -- for FIXME, NOTE, and XXX
+  ["@text.note"] = {
+  fg = C.yellow,
+  bg = C.base,
+  },
+}
 
 return M

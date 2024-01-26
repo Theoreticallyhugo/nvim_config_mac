@@ -13,6 +13,13 @@ local plugins = {
     end,
   },
   {
+    "folke/todo-comments.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    opts = require "custom.configs.todo-comments",
+    -- https://github.com/folke/todo-comments.nvim
+    lazy = false,
+  },
+  {
     "williamboman/mason.nvim",
     opts = require "custom.configs.mason",
   },
