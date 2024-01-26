@@ -5,7 +5,7 @@ local M = {
 		"ruff",
 		"black",
 		"debugpy",
-    "rust-analyser",
+    "rust-analyzer",
     "codelldb",
   },
 }
