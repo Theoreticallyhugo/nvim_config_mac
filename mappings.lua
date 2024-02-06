@@ -79,14 +79,33 @@ M.todo_comments = {
       function()
         require("todo-comments").jump_next()
       end,
-      "Next todo comment"
+      "Next todo-type comment"
     },
     ["<leader>tp"] = {
       function()
         require("todo-comments").jump_prev()
       end,
-      "Previous todo comment"
-    }
+      "Previous todo-type comment"
+    },
+    -- You can also specify a list of valid jump keywords
+    ["<leader>te"] = {
+      function()
+        require("todo-comments").jump_next({keywords = { "ERROR", "WARNING" }})
+      end,
+      "Next error/warning comment"
+    },
+    ["<leader>tf"] = {
+      function()
+        require("todo-comments").jump_next({keywords = { "FIXME" }})
+      end,
+      "Next fixme comment"
+    },
+    ["<leader>tt"] = {
+      function()
+        require("todo-comments").jump_next({keywords = { "TODO" }})
+      end,
+      "Next todo comment"
+    },
   }
 }
 
