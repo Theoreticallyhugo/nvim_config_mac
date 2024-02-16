@@ -13,6 +13,15 @@ local plugins = {
     end,
   },
   {
+      "zbirenbaum/copilot.lua",
+      cmd = "Copilot",
+      event = "InsertEnter",
+      config = function()
+        require("custom.configs.copilot")
+        -- require("copilot").setup({})
+      end,
+  },
+  {
     "folke/todo-comments.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },
     opts = require "custom.configs.todo-comments",
