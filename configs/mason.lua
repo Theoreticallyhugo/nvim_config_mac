@@ -7,6 +7,9 @@ local M = {
 		"debugpy",
     "rust-analyzer",
     "codelldb",
+    "xmlformatter",
+    "yaml-language-server",
+    "json-lsp",
   },
 }
 
