@@ -7,3 +7,5 @@
 -- with lazygit. hence its commented out.
 -- vim.keymap.set('t', '<Esc>', [[<C-\><C-n>]],{noremap=true})
 
+vim.g.lua_snippets_path = vim.fn.stdpath "config" .. "/lua/custom/lua_snippets"
+
