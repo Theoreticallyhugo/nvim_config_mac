@@ -12,6 +12,22 @@ M.custom = {
   },
 }
 
+M.nvimtree = {
+  -- use g? to show all default mappings, custom ones excluded
+  -- refer to https://github.com/nvim-tree/nvim-tree.lua/blob/master/doc/nvim-tree-lua.txt
+  -- point 2.2 QUICKSTART: HELP at line 149 for the commands
+  n = {
+    ["_"] = {
+      -- use dash "-" to go "up", meaning to the parent dir
+      -- use underscore "_", meaning shift+dash to cd
+      function ()
+        require("nvim-tree.api").tree.change_root_to_node() -- replacing <C-]>
+      end,
+      "CD: change directory"
+    },
+  }
+}
+
 M.telescope = {
   n = {
     ["<leader>fs"] = {
