@@ -59,7 +59,9 @@ M.telescope = {
         require("telescope.builtin").quickfix()
       end,
       "List quickfixes"
-    }
+    },
+    ["<leader>fz"] = { "", "" },  -- remap from fz to fj
+    ["<leader>fj"] = { "<cmd> Telescope current_buffer_fuzzy_find <CR>", "Find in current buffer" },
   }
 }
 
