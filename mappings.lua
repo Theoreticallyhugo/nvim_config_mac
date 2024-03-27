@@ -124,6 +124,10 @@ M.todo_comments = {
       end,
       "Next todo comment"
     },
+    ["<leader>tj"] = {
+      "<cmd> TodoTelescope <CR>",
+      "Next todo comment"
+    },
   }
 }
 

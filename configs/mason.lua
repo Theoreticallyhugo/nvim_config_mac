@@ -10,6 +10,7 @@ local M = {
     "xmlformatter",
     "yaml-language-server",
     "json-lsp",
+    "grammarly-languageserver",
   },
 }
 
